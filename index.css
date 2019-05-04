@@ -1,0 +1,212 @@
+body {
+  margin: 0 auto;
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  /* background-color: rgb(36, 36, 36); */
+  width: 100%;
+  z-index: 10;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+}
+
+.navigation {
+  margin: 10px auto;
+  padding: 0 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+.navigation li {
+  display: inline-block;
+  margin: 5px;
+  background-color: rgb(133, 133, 133);
+  cursor: pointer;
+}
+
+/* .nav1 {
+  width: 200px;
+} */
+
+.hidden {
+  display: none
+}
+
+.shown {
+  display: block
+}
+
+.nav2 {
+  float: right;
+}
+
+.navigation li a {
+  color: black;
+}
+
+li a {
+  /* background-color: rgb(133, 133, 133); */
+  padding: 5px 20px;
+  margin: 0 20px;
+  color: black;
+}
+
+li a:hover {
+  background-color: rgb(133, 133, 133, 0.7);
+}
+ 
+img {
+  width: 100%;
+}
+/* Banner */
+  
+#banner {
+  background: url("./resources/bgindex.jpg") no-repeat;
+  background-position-y: -180px;
+  width: 100%;
+  height: 750px;
+  position: relative;
+  display: inline-block;
+  background-size: cover;
+}
+
+#banner:before { 
+  background-color: rgba(0, 0, 0, 0.5);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* punya banner:before
+  
+#banner * {
+  position: relative; 
+}
+ */
+
+#banner h1 {
+  position: relative;
+  padding: 280px 0 0 0;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+
+#banner p {
+  position: relative;
+  color: white;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.containerUcup {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color: rgb(36, 36, 36);
+  /* position: absolute; */
+  /* float: left; */
+  background: url("./resources/bg.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.cc {
+  width: 25%;
+  height: 800px;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  opacity: 1;
+  padding: 0;
+  cursor: pointer;
+}
+
+.cc:before {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  content: "";
+  display: inline-block;
+}
+
+.cp {
+  width: 25%;
+  height: 800px;
+  font-size: 24px;
+  font-weight: 600;
+  color: whitesmoke;
+  position: absolute;
+  display: inline-block;
+  z-index: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.cp p {
+  padding-top: 390px;
+}
+
+.cc:hover {
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.con1 {
+  background-image: url("./resources/pic1.jpg");
+  background-position-x: -280px;
+  background-size: cover;
+}
+
+.con2 {
+  background-image: url("./resources/pic2.jpg");
+  background-position-x: -75px;
+  background-size: cover;
+}
+
+.con3 {
+  background-image: url("./resources/pic3.jpg");
+  background-position-x: -75px;
+  background-size: cover;
+}
+
+.con4 {
+  background-image: url("./resources/pic4.jpg");
+  background-size: cover;
+  background-position-x: -120px;
+}
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  margin: 5px auto;
+  padding: 0 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  font-size: small;
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  background-color: #555;
+  color: #fff;
+  text-align: justify;
+  width: 160px;
+  border-radius: 6px;
+  padding: 15px;
+  top: 40px;
+  margin-left: -80px;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+}
